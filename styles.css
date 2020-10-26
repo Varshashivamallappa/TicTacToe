@@ -1,0 +1,96 @@
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: black;
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+  background: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+
+table{
+  margin: 100px;
+}
+
+td{
+  height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+img{
+  width: 40px;
+  height: 40px;
+}
+
+.grid {
+  background: black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 50px;
+}
+
+.cell {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+}
+
+.x,
+.o {
+  cursor: default;
+}
+
+.x::after {
+  content: '×';
+  font-size: 200px;
+}
+
+.o::after {
+  content: '○';
+  color: grey;
+  font-size: 225px;
+}
+
+  .x::after {
+    font-size: 150px;
+  }
+
+  .o::after {
+    font-size: 175px;
+  }
+
+
+  .x::after {
+    font-size: 100px;
+  }
+
+  .o::after {
+    font-size: 125px;
+  }
+}
+
+/* Timer */
+.timer {
+    color: black;
+    font-size: 70px;
+    font-weight: bold;
+    display: none;
+}
